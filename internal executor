@@ -1,0 +1,791 @@
+--[[
+
+
+]]
+
+
+-- Instances
+
+local Main = Instance.new("ScreenGui")
+local Premium = Instance.new("ScreenGui")
+local Ads = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local Desc = Instance.new("TextLabel")
+local Close = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UIScale = Instance.new("UIScale")
+local Menu = Instance.new("ScreenGui")
+local MainMenu = Instance.new("Frame")
+local Topbar = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Close_2 = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UIScale_2 = Instance.new("UIScale")
+local Title_2 = Instance.new("TextButton")
+local UIPadding = Instance.new("UIPadding")
+local Settings = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UIScale_3 = Instance.new("UIScale")
+local Sub = Instance.new("TextLabel")
+local shadowHolder = Instance.new("Frame")
+local umbraShadow = Instance.new("ImageLabel")
+local ambientShadow = Instance.new("ImageLabel")
+local Main_2 = Instance.new("Frame")
+local Editor = Instance.new("TextBox")
+local UIPadding_2 = Instance.new("UIPadding")
+local UICorner_6 = Instance.new("UICorner")
+local Main_3 = Instance.new("Frame")
+local Execute = Instance.new("ImageButton")
+local Clear = Instance.new("ImageButton")
+local UICorner_7 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local Tabs = Instance.new("Folder")
+local Asdit = Instance.new("Frame")
+local main = Instance.new("ScrollingFrame")
+local Settings_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local options = Instance.new("Folder")
+local Rejoin = Instance.new("TextLabel")
+local Option = Instance.new("TextButton")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local Hax = Instance.new("TextLabel")
+local Option_2 = Instance.new("TextButton")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local Script = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Aimbot = Instance.new("Folder")
+local MainPart = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local As = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Bloxfruits = Instance.new("Folder")
+local MainPart_2 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local As_2 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local DexExplorer = Instance.new("Folder")
+local MainPart_3 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local As_3 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local Fisch = Instance.new("Folder")
+local MainPart_4 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local As_4 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local DB = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local Open = Instance.new("ImageButton")
+
+-- Properties
+
+Main.Name = "Main"
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Premium.Name = "Premium"
+Premium.Parent = Main
+
+Ads.Name = "Ad's"
+Ads.Parent = Premium
+Ads.AnchorPoint = Vector2.new(0.5, 0.5)
+Ads.BackgroundColor3 = Color3.new(0, 0, 0)
+Ads.BackgroundTransparency = 0.41999998688697815
+Ads.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Ads.Position = UDim2.new(0.107364684, 0, 0.073537305, 0)
+Ads.Size = UDim2.new(0, 221, 0, 87)
+Ads.ZIndex = 1000000181
+
+UICorner.Parent = Ads
+
+Title.Name = "Title"
+Title.Parent = Ads
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Title.Position = UDim2.new(0.0509622842, 0, 0.0794148073, 0)
+Title.Size = UDim2.new(0, 198, 0, 33)
+Title.ZIndex = 1000000181
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "SylphX"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextSize = 15
+Title.TextWrapped = true
+
+Desc.Name = "Desc"
+Desc.Parent = Ads
+Desc.BackgroundColor3 = Color3.new(1, 1, 1)
+Desc.BackgroundTransparency = 1
+Desc.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Desc.Position = UDim2.new(0.114783242, 0, 0.470219404, 0)
+Desc.Size = UDim2.new(0, 170, 0, 26)
+Desc.ZIndex = 1000000181
+Desc.Font = Enum.Font.Gotham
+Desc.Text = "Upgrade to premium and unlock access to exclusive features"
+Desc.TextColor3 = Color3.new(1, 1, 1)
+Desc.TextSize = 11
+Desc.TextWrapped = true
+Desc.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = Ads
+Close.Active = false
+Close.BackgroundColor3 = Color3.new(1, 1, 1)
+Close.BackgroundTransparency = 1
+Close.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Close.Position = UDim2.new(0.880114496, 0, 0.0746256486, 0)
+Close.Selectable = false
+Close.Size = UDim2.new(0, 21, 0, 21)
+Close.ZIndex = 1000000181
+
+UICorner_2.Parent = Close
+UICorner_2.CornerRadius = UDim.new(0, 4)
+
+ImageLabel.Parent = Close
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+ImageLabel.Position = UDim2.new(0.595239282, 0, 0.452380955, 0)
+ImageLabel.Size = UDim2.new(0, 21, 0, 21)
+ImageLabel.ZIndex = 1000000181
+ImageLabel.Image = "rbxassetid://7743878857"
+
+UIScale.Parent = ImageLabel
+UIScale.Scale = 0.699999988079071
+
+Menu.Name = "Menu"
+Menu.Parent = Main
+Menu.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainMenu.Name = "MainMenu"
+MainMenu.Parent = Menu
+MainMenu.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+MainMenu.BackgroundTransparency = 0.41999998688697815
+MainMenu.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+MainMenu.Position = UDim2.new(0.21183683, 0, 0.018394053, 0)
+MainMenu.Size = UDim2.new(0, 648, 0, 294)
+MainMenu.ZIndex = 1000000181
+
+Topbar.Name = "Topbar"
+Topbar.Parent = MainMenu
+Topbar.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+Topbar.BackgroundTransparency = 0.699999988079071
+Topbar.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Topbar.Size = UDim2.new(0, 648, 0, 36)
+
+UICorner_3.Parent = Topbar
+UICorner_3.CornerRadius = UDim.new(0, 5)
+
+Close_2.Name = "Close"
+Close_2.Parent = Topbar
+Close_2.Active = false
+Close_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Close_2.BackgroundTransparency = 1
+Close_2.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Close_2.Position = UDim2.new(0.938637257, 0, 0.0833333358, 0)
+Close_2.Selectable = false
+Close_2.Size = UDim2.new(0, 39, 0, 29)
+
+UICorner_4.Parent = Close_2
+UICorner_4.CornerRadius = UDim.new(0, 4)
+
+ImageLabel_2.Parent = Close_2
+ImageLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_2.BackgroundTransparency = 1
+ImageLabel_2.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+ImageLabel_2.Position = UDim2.new(0.5, 1, 0.5, 0)
+ImageLabel_2.Size = UDim2.new(0, 21, 0, 21)
+ImageLabel_2.Image = "rbxassetid://10747383819"
+ImageLabel_2.ImageColor3 = Color3.new(0.52549, 0.52549, 0.52549)
+
+UIScale_2.Parent = ImageLabel_2
+UIScale_2.Scale = 0.699999988079071
+
+Title_2.Name = "Title"
+Title_2.Parent = Topbar
+Title_2.Active = false
+Title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_2.BackgroundTransparency = 1
+Title_2.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Title_2.Position = UDim2.new(0.460260093, 0, 0, 0)
+Title_2.Selectable = false
+Title_2.Size = UDim2.new(0, 50, 0, 36)
+Title_2.Font = Enum.Font.GothamMedium
+Title_2.Text = "Sylph X"
+Title_2.TextColor3 = Color3.new(0.631373, 0.631373, 0.631373)
+Title_2.TextSize = 13
+Title_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UIPadding.Parent = Title_2
+UIPadding.PaddingLeft = UDim.new(0, 10)
+
+Settings.Name = "Settings"
+Settings.Parent = Topbar
+Settings.Active = false
+Settings.BackgroundColor3 = Color3.new(1, 1, 1)
+Settings.BackgroundTransparency = 1
+Settings.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Settings.Position = UDim2.new(0.898273051, 0, 0.0833333358, 0)
+Settings.Selectable = false
+Settings.Size = UDim2.new(0, 39, 0, 29)
+
+UICorner_5.Parent = Settings
+UICorner_5.CornerRadius = UDim.new(0, 4)
+
+ImageLabel_3.Parent = Settings
+ImageLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_3.BackgroundTransparency = 1
+ImageLabel_3.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+ImageLabel_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+ImageLabel_3.Size = UDim2.new(0, 21, 0, 21)
+ImageLabel_3.Image = "rbxassetid://10734897250"
+ImageLabel_3.ImageColor3 = Color3.new(0.52549, 0.52549, 0.52549)
+
+UIScale_3.Parent = ImageLabel_3
+UIScale_3.Scale = 0.6000000238418579
+
+Sub.Name = "Sub"
+Sub.Parent = Topbar
+Sub.BackgroundColor3 = Color3.new(1, 1, 1)
+Sub.BackgroundTransparency = 1
+Sub.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Sub.Position = UDim2.new(0.0154320989, 0, 0.055555556, 0)
+Sub.Size = UDim2.new(0, 20, 0, 32)
+Sub.Font = Enum.Font.GothamMedium
+Sub.Text = "..."
+Sub.TextColor3 = Color3.new(0.631373, 0.631373, 0.631373)
+Sub.TextSize = 12
+
+shadowHolder.Name = "shadowHolder"
+shadowHolder.Parent = MainMenu
+shadowHolder.BackgroundTransparency = 1
+shadowHolder.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+shadowHolder.Size = UDim2.new(1, 0, 1, 0)
+shadowHolder.ZIndex = 0
+
+umbraShadow.Name = "umbraShadow"
+umbraShadow.Parent = shadowHolder
+umbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+umbraShadow.BackgroundTransparency = 1
+umbraShadow.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+umbraShadow.Position = UDim2.new(0.5, 0, 0.501075268, 0)
+umbraShadow.Size = UDim2.new(1.00384617, 10, 1.00645161, 10)
+umbraShadow.ZIndex = 0
+umbraShadow.Image = "rbxassetid://1316045217"
+umbraShadow.ImageColor3 = Color3.new(0, 0, 0)
+umbraShadow.ImageTransparency = 0.8600000143051147
+umbraShadow.ScaleType = Enum.ScaleType.Slice
+umbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ambientShadow.Name = "ambientShadow"
+ambientShadow.Parent = shadowHolder
+ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+ambientShadow.BackgroundTransparency = 1
+ambientShadow.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+ambientShadow.Position = UDim2.new(0.5, 0, 0.501075268, 0)
+ambientShadow.Size = UDim2.new(1.00384617, 10, 1.00645161, 10)
+ambientShadow.ZIndex = 0
+ambientShadow.Image = "rbxassetid://1316045217"
+ambientShadow.ImageColor3 = Color3.new(0, 0, 0)
+ambientShadow.ImageTransparency = 0.8799999952316284
+ambientShadow.ScaleType = Enum.ScaleType.Slice
+ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+Main_2.Name = "Main"
+Main_2.Parent = MainMenu
+Main_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Main_2.BackgroundTransparency = 1
+Main_2.BorderColor3 = Color3.new(0, 0, 0)
+Main_2.BorderSizePixel = 0
+Main_2.Position = UDim2.new(0, 0, 0.122448981, 0)
+Main_2.Size = UDim2.new(0, 648, 0, 258)
+
+Editor.Name = "Editor"
+Editor.Parent = Main_2
+Editor.BackgroundColor3 = Color3.new(0.176471, 0.176471, 0.176471)
+Editor.BackgroundTransparency = 1
+Editor.BorderColor3 = Color3.new(1, 1, 1)
+Editor.BorderSizePixel = 0
+Editor.Position = UDim2.new(0.0140066268, 0, 0.0486130826, 0)
+Editor.Size = UDim2.new(0, 556, 0, 210)
+Editor.ClearTextOnFocus = false
+Editor.Font = Enum.Font.Code
+Editor.MultiLine = true
+Editor.PlaceholderColor3 = Color3.new(0.627451, 0.67451, 0.756863)
+Editor.PlaceholderText = ">"
+Editor.Text = ""
+Editor.TextColor3 = Color3.new(0.627451, 0.67451, 0.756863)
+Editor.TextSize = 15
+Editor.TextWrapped = true
+Editor.TextXAlignment = Enum.TextXAlignment.Left
+Editor.TextYAlignment = Enum.TextYAlignment.Top
+
+UIPadding_2.Parent = Editor
+UIPadding_2.PaddingLeft = UDim.new(0, 5)
+UIPadding_2.PaddingTop = UDim.new(0, 5)
+
+UICorner_6.Parent = Editor
+UICorner_6.CornerRadius = UDim.new(0, 4)
+
+Main_3.Name = "Main"
+Main_3.Parent = Main_2
+Main_3.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+Main_3.BackgroundTransparency = 0.699999988079071
+Main_3.BorderColor3 = Color3.new(0, 0, 0)
+Main_3.BorderSizePixel = 0
+Main_3.Position = UDim2.new(0.0740740746, 0, 0.825581372, 0)
+Main_3.Size = UDim2.new(0, 553, 0, 34)
+
+Execute.Name = "Execute"
+Execute.Parent = Main_3
+Execute.BackgroundColor3 = Color3.new(1, 1, 1)
+Execute.BackgroundTransparency = 1
+Execute.BorderColor3 = Color3.new(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0210247356, 0, 0.183521941, 0)
+Execute.Size = UDim2.new(0, 19, 0, 20)
+Execute.Image = "rbxassetid://10734923214"
+Execute.ImageTransparency = 0.699999988079071
+
+Clear.Name = "Clear"
+Clear.Parent = Main_3
+Clear.BackgroundColor3 = Color3.new(1, 1, 1)
+Clear.BackgroundTransparency = 1
+Clear.BorderColor3 = Color3.new(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.0817322582, 0, 0.183521941, 0)
+Clear.Size = UDim2.new(0, 19, 0, 20)
+Clear.Image = "rbxassetid://10747362393"
+Clear.ImageTransparency = 0.699999988079071
+
+UICorner_7.Parent = Main_3
+UICorner_7.CornerRadius = UDim.new(0, 17)
+
+UICorner_8.Parent = MainMenu
+UICorner_8.CornerRadius = UDim.new(0, 5)
+
+Tabs.Name = "Tabs"
+Tabs.Parent = MainMenu
+
+Asdit.Name = "Asdit"
+Asdit.Parent = Tabs
+Asdit.BackgroundColor3 = Color3.new(0.113725, 0.113725, 0.113725)
+Asdit.BackgroundTransparency = 1
+Asdit.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Asdit.ClipsDescendants = true
+Asdit.Position = UDim2.new(0.00117266621, 0, 0.145361245, 0)
+Asdit.Size = UDim2.new(0, 645, 0, 249)
+Asdit.Visible = false
+
+main.Name = "main"
+main.Parent = Asdit
+main.Active = true
+main.BackgroundColor3 = Color3.new(1, 1, 1)
+main.BackgroundTransparency = 1
+main.BorderColor3 = Color3.new(0, 0, 0)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0, 0, 0.00507547753, 0)
+main.Size = UDim2.new(0, 647, 0, 160)
+main.ScrollBarThickness = 2
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = main
+Settings_2.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Settings_2.BackgroundTransparency = 1
+Settings_2.BorderColor3 = Color3.new(0, 0, 0)
+Settings_2.BorderSizePixel = 0
+Settings_2.ClipsDescendants = true
+Settings_2.Position = UDim2.new(0.0247295201, 0, 0.0160642564, 0)
+Settings_2.Size = UDim2.new(0, 612, 0, 197)
+
+UICorner_9.Parent = Settings_2
+UICorner_9.CornerRadius = UDim.new(0, 5)
+
+options.Name = "options"
+options.Parent = Settings_2
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = options
+Rejoin.BackgroundColor3 = Color3.new(1, 1, 1)
+Rejoin.BackgroundTransparency = 1
+Rejoin.BorderColor3 = Color3.new(0, 0, 0)
+Rejoin.BorderSizePixel = 0
+Rejoin.Position = UDim2.new(0.439542472, 0, 0.0101522841, 0)
+Rejoin.Size = UDim2.new(0, 73, 0, 14)
+Rejoin.Font = Enum.Font.Code
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.new(1, 1, 1)
+Rejoin.TextSize = 14
+
+Option.Name = "Option"
+Option.Parent = Rejoin
+Option.BackgroundColor3 = Color3.new(1, 1, 1)
+Option.BackgroundTransparency = 1
+Option.BorderColor3 = Color3.new(0, 0, 0)
+Option.BorderSizePixel = 0
+Option.Position = UDim2.new(0, 0, 2, 0)
+Option.Size = UDim2.new(0, 73, 0, 15)
+Option.Font = Enum.Font.Code
+Option.Text = ""
+Option.TextColor3 = Color3.new(1, 1, 1)
+Option.TextSize = 14
+
+ImageLabel_4.Parent = Option
+ImageLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_4.BackgroundTransparency = 1
+ImageLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(0.397260278, 0, 0, 0)
+ImageLabel_4.Size = UDim2.new(0, 14, 0, 15)
+ImageLabel_4.Image = "rbxassetid://10723375250"
+
+Hax.Name = "Hax"
+Hax.Parent = options
+Hax.BackgroundColor3 = Color3.new(1, 1, 1)
+Hax.BackgroundTransparency = 1
+Hax.BorderColor3 = Color3.new(0, 0, 0)
+Hax.BorderSizePixel = 0
+Hax.Position = UDim2.new(0.441176474, 0, 0.289340109, 0)
+Hax.Size = UDim2.new(0, 73, 0, 14)
+Hax.Font = Enum.Font.Code
+Hax.Text = "Source code"
+Hax.TextColor3 = Color3.new(1, 1, 1)
+Hax.TextSize = 14
+
+Option_2.Name = "Option"
+Option_2.Parent = Hax
+Option_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Option_2.BackgroundTransparency = 1
+Option_2.BorderColor3 = Color3.new(0, 0, 0)
+Option_2.BorderSizePixel = 0
+Option_2.Position = UDim2.new(0, 0, 2, 0)
+Option_2.Size = UDim2.new(0, 73, 0, 15)
+Option_2.Font = Enum.Font.Code
+Option_2.Text = ""
+Option_2.TextColor3 = Color3.new(1, 1, 1)
+Option_2.TextSize = 14
+
+ImageLabel_5.Parent = Option_2
+ImageLabel_5.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_5.BackgroundTransparency = 1
+ImageLabel_5.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_5.BorderSizePixel = 0
+ImageLabel_5.Position = UDim2.new(0.397260278, 0, 0, 0)
+ImageLabel_5.Size = UDim2.new(0, 14, 0, 15)
+ImageLabel_5.Image = "rbxassetid://10723375250"
+
+Script.Name = "Script"
+Script.Parent = main
+Script.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Script.BackgroundTransparency = 1
+Script.BorderColor3 = Color3.new(0, 0, 0)
+Script.BorderSizePixel = 0
+Script.ClipsDescendants = true
+Script.Position = UDim2.new(0.0247295201, 0, 0.309585273, 0)
+Script.Size = UDim2.new(0, 612, 0, 306)
+
+UICorner_10.Parent = Script
+UICorner_10.CornerRadius = UDim.new(0, 5)
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Script
+
+MainPart.Name = "MainPart"
+MainPart.Parent = Aimbot
+MainPart.BackgroundColor3 = Color3.new(0.478431, 0.478431, 0.478431)
+MainPart.BackgroundTransparency = 1
+MainPart.BorderColor3 = Color3.new(0, 0, 0)
+MainPart.BorderSizePixel = 0
+MainPart.Position = UDim2.new(0.609084606, 0, 0.456963241, 0)
+MainPart.Size = UDim2.new(0, 221, 0, 107)
+
+UICorner_11.Parent = MainPart
+UICorner_11.CornerRadius = UDim.new(0, 4)
+
+As.Name = "As"
+As.Parent = MainPart
+As.BackgroundColor3 = Color3.new(1, 1, 1)
+As.BackgroundTransparency = 0.5
+As.BorderColor3 = Color3.new(0, 0, 0)
+As.BorderSizePixel = 0
+As.Position = UDim2.new(0.0452488698, 0, 0.757009506, 0)
+As.Size = UDim2.new(0, 200, 0, 20)
+As.Font = Enum.Font.SourceSans
+As.Text = "Execute"
+As.TextColor3 = Color3.new(0, 0, 0)
+As.TextSize = 14
+
+UICorner_12.Parent = As
+UICorner_12.CornerRadius = UDim.new(0, 4)
+
+TextLabel.Parent = MainPart
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0497737564, 0, 0.168224305, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 71)
+TextLabel.Font = Enum.Font.Code
+TextLabel.Text = "Universal Aimbot, This script gives you the best free aimbot with funtions like esp, aimbot etc etc"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+Bloxfruits.Name = "Bloxfruits"
+Bloxfruits.Parent = Script
+
+MainPart_2.Name = "MainPart"
+MainPart_2.Parent = Bloxfruits
+MainPart_2.BackgroundColor3 = Color3.new(0.478431, 0.478431, 0.478431)
+MainPart_2.BackgroundTransparency = 1
+MainPart_2.BorderColor3 = Color3.new(0, 0, 0)
+MainPart_2.BorderSizePixel = 0
+MainPart_2.Position = UDim2.new(0.0272996686, 0, 0.480197668, 0)
+MainPart_2.Size = UDim2.new(0, 221, 0, 107)
+
+UICorner_13.Parent = MainPart_2
+UICorner_13.CornerRadius = UDim.new(0, 4)
+
+As_2.Name = "As"
+As_2.Parent = MainPart_2
+As_2.BackgroundColor3 = Color3.new(1, 1, 1)
+As_2.BackgroundTransparency = 0.5
+As_2.BorderColor3 = Color3.new(0, 0, 0)
+As_2.BorderSizePixel = 0
+As_2.Position = UDim2.new(0.0452488698, 0, 0.757009506, 0)
+As_2.Size = UDim2.new(0, 200, 0, 20)
+As_2.Font = Enum.Font.SourceSans
+As_2.Text = "Execute"
+As_2.TextColor3 = Color3.new(0, 0, 0)
+As_2.TextSize = 14
+
+UICorner_14.Parent = As_2
+UICorner_14.CornerRadius = UDim.new(0, 4)
+
+TextLabel_2.Parent = MainPart_2
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0452488698, 0, 0.102804311, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 70)
+TextLabel_2.Font = Enum.Font.Code
+TextLabel_2.Text = "oldyanshub, The best free bloxfruit script for farming etc etc"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 14
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
+
+DexExplorer.Name = "Dex Explorer"
+DexExplorer.Parent = Script
+
+MainPart_3.Name = "MainPart"
+MainPart_3.Parent = DexExplorer
+MainPart_3.BackgroundColor3 = Color3.new(0.478431, 0.478431, 0.478431)
+MainPart_3.BackgroundTransparency = 1
+MainPart_3.BorderColor3 = Color3.new(0, 0, 0)
+MainPart_3.BorderSizePixel = 0
+MainPart_3.Position = UDim2.new(0.608906269, 0, 0.0146681657, 0)
+MainPart_3.Size = UDim2.new(0, 221, 0, 107)
+
+UICorner_15.Parent = MainPart_3
+UICorner_15.CornerRadius = UDim.new(0, 4)
+
+As_3.Name = "As"
+As_3.Parent = MainPart_3
+As_3.BackgroundColor3 = Color3.new(1, 1, 1)
+As_3.BackgroundTransparency = 0.5
+As_3.BorderColor3 = Color3.new(0, 0, 0)
+As_3.BorderSizePixel = 0
+As_3.Position = UDim2.new(0.0452488698, 0, 0.757009506, 0)
+As_3.Size = UDim2.new(0, 200, 0, 20)
+As_3.Font = Enum.Font.SourceSans
+As_3.Text = "Execute"
+As_3.TextColor3 = Color3.new(0, 0, 0)
+As_3.TextSize = 14
+
+UICorner_16.Parent = As_3
+UICorner_16.CornerRadius = UDim.new(0, 4)
+
+TextLabel_3.Parent = MainPart_3
+TextLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0452488698, 0, 0.0747659281, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 72)
+TextLabel_3.Font = Enum.Font.Code
+TextLabel_3.Text = "Dex explorer, This script allows you to see parts like workspace, startergui etc etc just like roblox studio"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 14
+TextLabel_3.TextWrapped = true
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_3.TextYAlignment = Enum.TextYAlignment.Top
+
+Fisch.Name = "Fisch"
+Fisch.Parent = Script
+
+MainPart_4.Name = "MainPart"
+MainPart_4.Parent = Fisch
+MainPart_4.BackgroundColor3 = Color3.new(0.478431, 0.478431, 0.478431)
+MainPart_4.BackgroundTransparency = 1
+MainPart_4.BorderColor3 = Color3.new(0, 0, 0)
+MainPart_4.BorderSizePixel = 0
+MainPart_4.Position = UDim2.new(0.0289336555, 0, 0.0147933187, 0)
+MainPart_4.Size = UDim2.new(0, 221, 0, 107)
+
+UICorner_17.Parent = MainPart_4
+UICorner_17.CornerRadius = UDim.new(0, 4)
+
+As_4.Name = "As"
+As_4.Parent = MainPart_4
+As_4.BackgroundColor3 = Color3.new(1, 1, 1)
+As_4.BackgroundTransparency = 0.5
+As_4.BorderColor3 = Color3.new(0, 0, 0)
+As_4.BorderSizePixel = 0
+As_4.Position = UDim2.new(0.0452488698, 0, 0.757009506, 0)
+As_4.Size = UDim2.new(0, 200, 0, 20)
+As_4.Font = Enum.Font.SourceSans
+As_4.Text = "Execute"
+As_4.TextColor3 = Color3.new(0, 0, 0)
+As_4.TextSize = 14
+
+UICorner_18.Parent = As_4
+UICorner_18.CornerRadius = UDim.new(0, 4)
+
+TextLabel_4.Parent = MainPart_4
+TextLabel_4.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0452488698, 0, 0.0747667849, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 72)
+TextLabel_4.Font = Enum.Font.Code
+TextLabel_4.Text = "SpeedHub, The best free Fisch script with fast and working functions"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextSize = 14
+TextLabel_4.TextWrapped = true
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_4.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_19.Parent = Asdit
+UICorner_19.CornerRadius = UDim.new(0, 5)
+
+DB.Name = "DB"
+DB.Parent = Menu
+DB.BackgroundColor3 = Color3.new(0, 0, 0)
+DB.BackgroundTransparency = 0.41999998688697815
+DB.BorderColor3 = Color3.new(0, 0, 0)
+DB.BorderSizePixel = 0
+DB.Position = UDim2.new(0.798580289, 0, 0.0223880596, 0)
+DB.Size = UDim2.new(0, 59, 0, 28)
+DB.ZIndex = 1111111266
+
+UICorner_20.Parent = DB
+UICorner_20.CornerRadius = UDim.new(0, 49)
+
+Open.Name = "Open"
+Open.Parent = DB
+Open.BackgroundColor3 = Color3.new(1, 1, 1)
+Open.BackgroundTransparency = 21
+Open.BorderColor3 = Color3.new(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.376743108, 0, 0.25, 0)
+Open.Size = UDim2.new(0, 14, 0, 14)
+Open.ZIndex = 1111111212
+Open.Image = "rbxassetid://10723375250"
+
+-- Scripts
+
+local function WVJXD_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.Menu.MainMenu.Topbar.Close.MouseButton1Click:Connect(function()
+		script.Parent:Destroy()
+	end)
+	
+	script.Parent.Menu.MainMenu.Topbar.Settings.MouseButton1Click:Connect(function()
+		local asditTab = script.Parent.Menu.MainMenu.Tabs.Asdit
+		local asditTab2 = script.Parent.Menu.MainMenu.Main
+		asditTab.Visible = not asditTab.Visible
+		asditTab2.Visible = not asditTab.Visible
+	end)
+	
+	script.Parent.Menu.MainMenu.Tabs.Asdit.main.Script.Aimbot.MainPart.As.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ForlornWindow46/Roblox-Scripts/main/aimbot.lua"))()
+	end)
+	
+	script.Parent.Menu.MainMenu.Tabs.Asdit.main.Script.Bloxfruits.MainPart.As.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/yanlvl99/Roblox_Scripts/refs/heads/main/oldyanshub.lua"))()
+	end)
+	
+	script.Parent.Menu.MainMenu.Tabs.Asdit.main.Script.Fisch.MainPart.As.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+	end)
+	
+	script.Parent.Menu.MainMenu.Tabs.Asdit.main.Script["Dex Explorer"].MainPart.As.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/FastyGame31/Scripts/refs/heads/main/Dex%20explorer", true))()
+	end)
+	
+	script.Parent.Menu.MainMenu.Tabs.Asdit.main.Settings.options.Rejoin.Option.MouseButton1Click:Connect(function()
+		repeat wait() until game:IsLoaded()
+		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+	end)
+	
+	script.Parent.Menu.MainMenu.Tabs.Asdit.main.Settings.options.Hax.Option.MouseButton1Click:Connect(function()
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://1120283591"
+		sound.Parent = script.Parent
+		sound:Play()
+		sound.Ended:Connect(function()
+			sound:Destroy()
+		end)
+	end)
+	
+	script.Parent.Premium["Ad's"].Close.MouseButton1Click:Connect(function()
+		script.Parent.Premium.Enabled = false
+	end)
+	
+	script.Parent.Menu.MainMenu.Main.Main.Execute.MouseButton1Click:Connect(function()
+		loadstring(script.Parent.Menu.MainMenu.Main.Editor.Text)()
+	end)
+	
+	script.Parent.Menu.MainMenu.Main.Main.Clear.MouseButton1Click:Connect(function()
+		script.Parent.Menu.MainMenu.Main.Editor.Text = ""
+	end)
+	
+	script.Parent.Menu.MainMenu.Draggable = true
+	script.Parent.Menu.MainMenu.Active = true
+	script.Parent.Menu.DB.Draggable = true
+	script.Parent.Menu.DB.Active = true
+	
+	script.Parent.Menu.MainMenu.Main.Editor.FocusLost:Connect(highlightCode)
+	
+	script.Parent.Menu.DB.Open.MouseButton1Click:Connect(function()
+		local maingui = script.Parent.Menu.MainMenu
+		maingui.Visible = not maingui.Visible
+	end)
+	
+	
+	while true do
+		script.Parent.Premium.Enabled = true
+		wait(100)
+	end
+	
+end
+coroutine.wrap(WVJXD_fake_script)()
